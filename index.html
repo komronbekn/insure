@@ -18,6 +18,7 @@
 <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <body>
 
@@ -42,17 +43,16 @@
 
             </div>
         </div>
-        <div class="w-[100%] h-[600px]  bg-[#2D2641] flex items-center px-[165px] gap-[30px] max-[430px]:flex-col-reverse max-[430px]:px-[0px]
-        max-[430px]:h-[954px] max-[430px]:gap-0]">
-            <div class="max-[430px]:]">
-                <h1 class="w-[540px] text-[72px] text-[white] max-[430px]:w-[327px] max-[430px]:text-[48px]">Humanizing your insurance.</h1>
-                <p class="w-[540px] text-[Karla] text-[16px] text-[white] mt-[16px]">Get your life insurance coverage
+        <div class="header__second_section">
+            <div class="header__second_section__left">
+                <h1 class="website_titlle">Humanizing your insurance.</h1>
+                <p class="header__second_section__left__description">Get your life insurance coverage
                     easier and faster. We blend our expertise and technology to help you find the plan that’s right for
                     you. Ensure you and your loved ones are protected.</p>
-                <button class="w-[146px] h-[40px] border-[2px] border-[white] text-[white] mt-[24px] text-[13px]">VIEW
+                <button class="header__second_section__left__button--plans">VIEW
                     PLANS</button>
             </div>
-            <div class="translate-y-[105px] max-[430px]:translate-y-0">
+            <div class="header__second_section__right">
                 <img src="./assets/img/Bitmap.png" alt="">
             </div>
 
@@ -63,10 +63,10 @@
 
 
     <main class="website__main mt-[369px] px-[165px]">
-        <section>
+        <section class="website__main__section_1">
             <p class="text-[72px]">We’re different</p>
-            <div class="mt-[96px] flex gap-[30px]">
-                <div class="">
+            <div class="website__main__section_1__cards_wrapper mt-[96px] flex gap-[30px]">
+                <div data-aos="zoom-in-right" class="" >
                     <div class="rounded-[50%] w-[86px] h-[86px] bg-[#96A9C6] flex justify-center items-center"><img
                             src="./assets/icon/img1.png" alt=""></div>
                     <p class="text-[28px] text-[#2C2830] mt-[32px]">Snappy Process</p>
@@ -75,14 +75,14 @@
                         not hours. Don’t get stuck filling in
                         tedious forms.</p>
                 </div>
-                <div class="">
+                <div  data-aos="flip-left" class="">
                     <div class="rounded-[50%] w-[86px] h-[86px] bg-[#96A9C6] flex justify-center items-center"><img
                             src="./assets/icon/002-dollar-coin-money.png" alt=""></div>
                     <p class="text-[28px] text-[#2C2830] mt-[32px]">Affordable Prices</p>
                     <p class="w-[350px] text-[16px] text-[#837D88] mt-[16px]">We don’t want you worrying about high
                         monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
                 </div>
-                <div class="">
+                <div  data-aos="zoom-in-left" class="">
                     <div class="rounded-[50%] w-[86px] h-[86px] bg-[#96A9C6] flex justify-center items-center"><img
                             src="./assets/icon/user(2).png" alt=""></div>
                     <p class="text-[28px] text-[#2C2830] mt-[32px]">People First</p>
@@ -150,7 +150,9 @@
   
     </footer>
 </body>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script>
+    AOS.init();
+  </script>
 <script src="https://cdn.tailwindcss.com"> </script>
 <script src="./tailwind.config.js"></script>
 
